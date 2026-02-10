@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nique's Form Creation with DOM</title>
+    <!-- Bootstrap CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style_sr.css">
+</head>
+<body>
+    <header>
+        <h1 class="text-center mb-3" style="padding: 32px 0px;">Student Registration</h1>
+    </header>
+    <div class="container-fluid">    
+        <div class="row">
+            <!-- Form Section -->
+            <div class="col-md-5">
+                <div class="form-section">
+                    <h3 class="mb-2 fw-semibold text-center">Manage Student</h3>
+                    <p class="text-center" style="font-size: smaller; color: #777;">Kindly complete the forms below</p>
+                    <form id="userForm">
+                        <div class="mb-3">
+                            <label for="fname" class="form-label">First Name</label>
+                            <input type="text" class="form-control" id="fname" placeholder="Enter first name">
+                        </div>
+                        
+                        <div class="mb-3">
+                            <label for="lname" class="form-label">Last Name</label>
+                            <input type="text" class="form-control" id="lname" placeholder="Enter last name">
+                        </div>
+                        
+                        <div class="mb-3">
+                            <label for="age" class="form-label">Age</label>
+                            <input type="number" class="form-control" id="age" placeholder="Enter age">
+                        </div>
+                        
+                        <div class="mb-3">
+                            <label for="gender" class="form-label mb-1">Gender</label>
+                            <select class="form-select" id="gender">
+                                <option value="">Select gender</option>
+                                <option value="Male">Male</option>
+                                <option value="Female">Female</option>
+                            </select>
+                        </div>
+                        
+                        <!-- Error Message Display -->
+                        <p id="error" class="text-danger"></p>
+                        
+                        <button type="submit" class="btn btn-primary w-100">Submit</button>
+                    </form>
+                </div>
+            </div>
+            
+            <!-- Table Section -->
+            <div class="col-md-7">
+                <div class="table-section">
+                    <h3 class="mb-3 fw-semibold text-center">Student List</h3>
+                    <div class="table-responsive">
+                        <table class="table table-striped table-hover table-bordered">
+                            <thead class="custom-purple text-center">
+                                <tr>
+                                    <th>First Name</th>
+                                    <th>Last Name</th>
+                                    <th>Age</th>
+                                    <th>Gender</th>
+                                </tr>
+                            </thead>
+                            <tbody id="tableBody" class="text-center">
+                                <!-- Dynamic rows will be added here -->
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="pt-4 pb-3 text-center fw-semibold" style="background: rgb(112, 0, 176); color: white;">
+            <p>&copy; S.Y. 2025-2026 Stephanie Claire N. Nique | University of Mindanao</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="logic_sr.js"></script>
+
+    <!-- Bootstrap JS CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,67 @@
+body {
+    background: linear-gradient(90deg, rgb(250, 220, 255), rgb(248, 206, 255), rgb(206, 210, 255), rgb(220, 224, 255));
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 0px;
+}
+
+header {
+    background: rgb(112, 0, 176);
+    color: white;
+}
+
+h1 {
+    font-weight: 900;
+}
+
+label {
+    font-weight: 550;
+    font-size: 18px;
+}
+
+.container-fluid {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+#error {
+    min-height: 20px;
+    font-weight: 500;
+}
+
+.form-section {
+    background: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    margin-bottom: 30px;
+}
+
+.table-section {
+    background: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.table-bordered {
+    border: 2px solid #dee2e6;
+}
+
+.table-bordered th,
+.table-bordered td {
+    border: 1px solid #dee2e6;
+}
+
+thead.custom-purple {
+    background-color: rgb(112, 0, 176) !important;
+    color: white !important;
+    font-weight: bold;
+}
+
+thead.custom-purple th {
+    background-color: rgb(112, 0, 176) !important;
+    color: white !important;
+    border-color: rgb(92, 0, 146) !important;
+    font-weight: 700;
+}
